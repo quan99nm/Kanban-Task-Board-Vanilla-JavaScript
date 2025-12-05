@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Board - Vanilla JS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="title">Kanban Task Board</h1>
+
+    <div class="add-task-form">
+      <input type="text" id="task-input" placeholder="Enter new task...." />
+      <button id="add-task-button">Add Task</button>
+    </div>
+    <div class="board">
+      <div class="column" data-status="todo">
+        <h2>Todo <span class="badge" data-badge="todo">0</span></h2>
+        <div class="column-body" data-column="todo"></div>
+      </div>
+      <div class="column" data-status="doing">
+        <h2>Doing <span class="badge" data-badge="doing">0</span></h2>
+        <div class="column-body" data-column="doing"></div>
+      </div>
+      <div class="column" data-status="done">
+        <h2>Done <span class="badge" data-badge="done">0</span></h2>
+        <div class="column-body" data-column="done"></div>
+      </div>
+    </div>
+    <script type="module" src="js/controller.js"></script>
+  </body>
+</html>
